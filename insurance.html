@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Insurance We Accept | Merciful Home Care</title>
+<meta name="description" content="Merciful Home Care accepts all insurance operating in Michigan, including MDHHS, Humana, AmeriHealth Caritas, Aetna, HAP CareSource, United Healthcare, Molina, Wellcare by Meridian, Priority Health, and DAAA." />
+<meta property="og:title" content="Insurance We Accept | Merciful Home Care" />
+<meta property="og:description" content="Merciful Home Care accepts all insurance operating in Michigan, including MDHHS, Humana, AmeriHealth Caritas, Aetna, HAP CareSource, United Healthcare, Molina, Wellcare by Meridian, Priority Health, and DAAA." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/img/logo.png" />
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/img/favicon-256.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/a11y.css">
+<style>
+:root{
+  --green-deep:#3D6B2A;--green:#5F9438;--green-bright:#8CBE5C;
+  --sand:#F2F8E9;--sand-deep:#E4EFD2;--paper:#FFFFFF;
+  --ink:#222A19;--ink-soft:#5B6B4E;--line:rgba(34,42,25,.15);--line-soft:rgba(34,42,25,.08);
+  --maxw:1240px;--r:4px;
+  --display:"Newsreader",Georgia,"Times New Roman",serif;
+  --body:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--paper);font-size:1.0625rem;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.12;letter-spacing:-.015em}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+.eyebrow{font-family:var(--body);font-weight:600;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--green)}
+.rule{height:1px;background:var(--line);border:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;font-family:var(--body);font-weight:600;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;padding:1.12em 1.9em;border-radius:var(--r);border:1px solid transparent;cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.btn svg{width:1.2em;height:1.2em}
+.btn-solid{background:var(--green-deep);color:#fff}
+.btn-solid:hover{background:var(--ink)}
+.btn-line{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-line:hover{border-color:var(--ink);background:var(--ink);color:#fff}
+.btn-white{background:#fff;color:var(--green-deep)}
+.btn-white:hover{background:var(--green-bright);color:var(--ink)}
+.btn-linew{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
+.btn-linew:hover{background:#fff;color:var(--green-deep);border-color:#fff}
+:focus-visible{outline:2px solid var(--green-deep);outline-offset:3px}
+.topbar{background:var(--ink);color:#C9D7B8;font-size:.78rem;letter-spacing:.03em}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:40px;flex-wrap:wrap}
+.topbar a{display:inline-flex;align-items:center;gap:.5em;color:#fff;font-weight:500;white-space:nowrap}
+.topbar a svg{width:14px;height:14px;flex:none;color:var(--green-bright)}
+.topbar a:hover{color:var(--green-bright)}
+.topbar .left{display:inline-flex;align-items:center;gap:.6em;white-space:nowrap;font-weight:500}
+.topbar .left b{color:#fff;font-weight:600}
+.topbar .right{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+header.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:90px}
+.brand{display:flex;align-items:center;gap:14px;color:var(--ink)}
+.brand .logo{height:54px;width:auto;flex:none}
+.brand .wm{font-family:var(--display);font-size:1.28rem;line-height:1.02;letter-spacing:.01em;text-transform:uppercase;white-space:nowrap}
+.brand .wm small{display:block;font-family:var(--body);font-weight:600;font-size:.56rem;letter-spacing:.22em;color:var(--green);margin-top:5px}
+nav.links{display:flex;align-items:center;gap:32px}
+nav.links a{font-weight:600;font-size:.76rem;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-soft);padding:6px 0;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+nav.links a:hover{color:var(--ink);border-color:var(--green-bright)}
+.p-home nav.links a[href="/"],.p-services nav.links a[href="services"],.p-insurance nav.links a[href="insurance"],.p-about nav.links a[href="about"],.p-careers nav.links a[href="careers"],.p-contact nav.links a[href="contact"]{color:var(--ink);border-color:var(--green-deep)}
+.nav-cta{display:flex;align-items:center;gap:18px}
+.nav-tel{display:inline-flex;flex-direction:column;line-height:1.15;text-align:right}
+.nav-tel small{font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);font-weight:600}
+.nav-tel b{font-family:var(--display);font-size:1.16rem;font-weight:500;color:var(--green-deep);white-space:nowrap}
+.nav-call{display:none;padding:.82em}
+.nav-call svg{width:20px;height:20px}
+.menu-btn{display:none;position:relative;background:none;border:1px solid var(--line);border-radius:var(--r);cursor:pointer;color:var(--ink);padding:10px}
+.menu-btn svg{width:22px;height:22px;transition:opacity .2s}
+.nav-overlay{position:fixed;inset:0;background:rgba(34,42,25,.55);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .3s,visibility .3s;z-index:49}
+.nav-overlay.open{opacity:1;visibility:visible;pointer-events:auto}
+body.menu-open{overflow:hidden}
+body.menu-open .menu-btn>svg{opacity:0}
+body.menu-open .menu-btn{border-color:rgba(255,255,255,.4)}
+body.menu-open .menu-btn::before,body.menu-open .menu-btn::after{content:"";position:absolute;left:50%;top:50%;width:20px;height:2px;background:#fff;border-radius:2px}
+body.menu-open .menu-btn::before{transform:translate(-50%,-50%) rotate(45deg)}
+body.menu-open .menu-btn::after{transform:translate(-50%,-50%) rotate(-45deg)}
+.hero{display:grid;grid-template-columns:1.02fr .98fr;min-height:min(76vh,660px)}
+.hero .panel{background:var(--green-deep);color:#fff;display:flex;flex-direction:column;justify-content:center;padding:76px 0 76px 0}
+.hero .inner{width:100%;padding-left:max(32px,calc((100vw - var(--maxw))/2 + 32px));padding-right:60px}
+.hero .eyebrow{color:var(--green-bright)}
+.hero h1{font-size:clamp(2.5rem,4.4vw,3.75rem);color:#fff;margin:.42em 0 .5em;font-weight:400}
+.hero h1 em{font-style:italic;color:var(--green-bright)}
+.hero p{color:#DCE9CC;font-size:1.06rem;max-width:34em}
+.hero p+p{margin-top:.9em}
+.hero .row{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+.hero .shot{position:relative;background:var(--sand)}
+.hero .shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.factbar{border-bottom:1px solid var(--line);background:#fff}
+.factbar .wrap{display:grid;grid-template-columns:repeat(4,1fr);padding:0 32px}
+.fact{padding:26px 30px 26px 0;border-left:1px solid var(--line);padding-left:30px}
+.fact:first-child{border-left:0;padding-left:0}
+.fact b{display:block;font-family:var(--display);font-size:1.34rem;font-weight:500;color:var(--ink);line-height:1.2}
+.fact span{display:block;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;margin-top:5px}
+.pagehead{background:var(--green-deep);color:#fff;padding:76px 0 72px}
+.pagehead .crumb{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--green-bright);font-weight:600}
+.pagehead .crumb a{color:rgba(255,255,255,.66)}
+.pagehead .crumb a:hover{color:#fff}
+.pagehead h1{font-size:clamp(2.2rem,4.6vw,3.4rem);color:#fff;margin:.42em 0 .34em;font-weight:400;max-width:16em}
+.pagehead p{color:#DCE9CC;font-size:1.06rem;max-width:52em}
+.band{padding:92px 0}
+.band.alt{background:var(--sand)}
+.band.tight{padding:64px 0}
+.grid2{display:grid;grid-template-columns:210px 1fr;gap:64px;align-items:start}
+.slab{position:sticky;top:120px}
+.slab .num{font-family:var(--display);font-size:.86rem;font-weight:500;color:var(--green);letter-spacing:.1em;display:block;padding-bottom:10px;border-bottom:2px solid var(--green-bright);margin-bottom:14px;width:44px}
+.slab p{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--ink-soft)}
+.lead h2{font-size:clamp(1.9rem,3.5vw,2.7rem);color:var(--ink);max-width:17em;font-weight:400}
+.lead>p{color:var(--ink-soft);font-size:1.08rem;max-width:44em;margin-top:1.1em}
+.lead .btn{margin-top:34px}
+.matrix{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:52px}
+.mcell{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:38px 34px 40px;transition:background .3s;display:block}
+.mcell:hover{background:var(--sand)}
+.band.alt .mcell:hover{background:#fff}
+.mcell .ic{color:var(--green);display:block;margin-bottom:20px}
+.mcell .ic svg{width:30px;height:30px}
+.mcell h3{font-size:1.24rem;color:var(--ink);margin-bottom:9px;font-weight:500}
+.mcell p{font-size:.95rem;color:var(--ink-soft);line-height:1.65}
+.mcell .go{display:inline-flex;align-items:center;gap:.45em;margin-top:16px;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--green-deep)}
+.mcell .go svg{width:14px;height:14px;transition:transform .25s}
+.mcell:hover .go svg{transform:translateX(4px)}
+.mcell.fill{background:var(--green-deep);color:#fff}
+.mcell.fill:hover{background:var(--ink)}
+.mcell.fill h3{color:#fff}
+.mcell.fill p{color:#DCE9CC}
+.mcell.fill .ic,.mcell.fill .go{color:var(--green-bright)}
+.photoband{position:relative;min-height:520px;display:grid;place-items:center;background:var(--ink);overflow:hidden}
+.photoband img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.36}
+.photoband .q{position:relative;max-width:880px;text-align:center;color:#fff;padding:80px 32px}
+.photoband blockquote{font-family:var(--display);font-size:clamp(1.6rem,3.4vw,2.5rem);line-height:1.3;font-weight:400}
+.photoband blockquote em{font-style:italic;color:var(--green-bright)}
+.photoband .attr{margin-top:26px;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.7);font-weight:600}
+.slist{border-top:1px solid var(--line)}
+.srow{display:grid;grid-template-columns:64px 1fr 1fr;gap:44px;padding:44px 0;border-bottom:1px solid var(--line);scroll-margin-top:130px;align-items:start}
+.srow .n{font-family:var(--display);font-size:1.5rem;color:var(--green-bright);font-weight:500;line-height:1}
+.srow h2{font-size:1.6rem;color:var(--ink);font-weight:500;margin-bottom:.5em}
+.srow>div>p{color:var(--ink-soft);font-size:1rem}
+.srow ul{list-style:none;display:grid;gap:11px;padding-top:6px}
+.srow li{display:flex;gap:12px;align-items:flex-start;font-size:.96rem;color:var(--ink)}
+.srow li svg{width:18px;height:18px;color:var(--green);flex:none;margin-top:5px}
+.hire{background:var(--green-deep);color:#fff}
+.hire .wrap{display:grid;grid-template-columns:1.3fr .7fr;gap:60px;align-items:start;padding-top:92px;padding-bottom:92px}
+.hire .eyebrow{color:var(--green-bright)}
+.hire h2{color:#fff;font-size:clamp(1.9rem,3.8vw,2.8rem);margin:.42em 0 .5em;font-weight:400;max-width:14em}
+.hire p{color:#DCE9CC;font-size:1.06rem;max-width:38em}
+.hire ul{list-style:none;display:grid;gap:0;margin-top:32px;border-top:1px solid rgba(255,255,255,.22)}
+.hire li{display:flex;gap:14px;align-items:flex-start;padding:15px 0;border-bottom:1px solid rgba(255,255,255,.22);font-size:.98rem;color:#fff}
+.hire li svg{width:19px;height:19px;color:var(--green-bright);flex:none;margin-top:4px}
+.hire .box{border:1px solid rgba(255,255,255,.3);padding:34px}
+.hire .box h3{color:#fff;font-size:1.36rem;font-weight:500;margin-bottom:12px}
+.hire .box p{color:#DCE9CC;font-size:.96rem;margin-bottom:24px}
+.hire .box .btn{width:100%}
+.hire .box .btn+.btn{margin-top:10px}
+.marq-sec{padding:70px 0;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.marq-sec .head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;margin-bottom:38px}
+.marq-sec .head h2{font-size:clamp(1.5rem,2.8vw,2.1rem);color:var(--ink);font-weight:400;max-width:16em;margin-top:.35em}
+.marq-sec .head p{color:var(--ink-soft);font-size:.95rem;max-width:26em}
+.marquee{position:relative;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.marquee-track{display:flex;width:max-content;animation:slide 52s linear infinite}
+.marquee:hover .marquee-track,.marquee:focus-within .marquee-track{animation-play-state:paused}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.ins{display:flex;align-items:center;justify-content:center;text-align:center;flex:none;width:218px;height:88px;padding:0 24px;border:1px solid var(--line);border-right:0;font-family:var(--display);font-size:1.02rem;font-weight:500;color:var(--ink);line-height:1.25;background:#fff}
+.marquee-track .ins:last-child{border-right:1px solid var(--line)}
+.ins img{max-height:46px;max-width:160px;width:auto;object-fit:contain}
+.ins-matrix{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.ins-matrix .ins{width:auto;height:126px;border:0;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.steps-row{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--ink);margin-top:52px}
+.stepx{padding:32px 34px 8px;border-right:1px solid var(--line)}
+.stepx:first-child{padding-left:0}
+.stepx:last-child{border-right:0}
+.stepx .n{font-family:var(--display);font-size:2.9rem;color:var(--green-bright);line-height:1;font-weight:400}
+.stepx h3{font-size:1.22rem;color:var(--ink);margin:.5em 0 .4em;font-weight:500}
+.stepx p{color:var(--ink-soft);font-size:.96rem}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.split .art{position:relative;aspect-ratio:4/3.4;background:var(--sand);overflow:hidden}
+.split .art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.vlist{border-top:1px solid var(--line);margin-top:34px}
+.vrow{display:flex;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}
+.vrow .ic{color:var(--green);flex:none}
+.vrow .ic svg{width:26px;height:26px}
+.vrow h3{font-size:1.1rem;color:var(--ink);margin-bottom:4px;font-weight:500}
+.vrow p{color:var(--ink-soft);font-size:.95rem}
+.faq details{border-bottom:1px solid var(--line);padding:24px 0}
+.faq details:first-of-type{border-top:1px solid var(--line)}
+.faq summary{font-family:var(--display);font-size:1.22rem;font-weight:500;color:var(--ink);cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:24px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--body);font-weight:400;color:var(--green);font-size:1.5rem;line-height:1;flex:none}
+.faq details[open] summary::after{content:"\2212"}
+.faq p{color:var(--ink-soft);font-size:1rem;margin-top:12px;max-width:64em}
+.cinfo{border-top:1px solid var(--line)}
+.crow{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:22px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.crow dt{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--ink-soft)}
+.crow dd{font-family:var(--display);font-size:1.22rem;font-weight:500;color:var(--ink);overflow-wrap:anywhere}
+.crow dd a:hover{color:var(--green-deep)}
+.crow dd small{display:block;font-family:var(--body);font-size:.84rem;font-weight:400;color:var(--ink-soft);margin-top:3px;letter-spacing:0}
+.form{background:var(--sand);padding:40px;border:1px solid var(--line)}
+.band.alt .form{background:#fff}
+.form h3{font-family:var(--display);font-size:1.6rem;color:var(--ink);margin-bottom:8px;font-weight:500}
+.form>p{color:var(--ink-soft);font-size:.95rem;margin-bottom:26px}
+.field{margin-bottom:18px}
+.field label{display:block;font-weight:600;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:7px}
+.field input,.field select,.field textarea{width:100%;font-family:var(--body);font-size:1rem;color:var(--ink);padding:.82em .9em;border:1px solid var(--line);border-radius:var(--r);background:#fff;transition:border-color .2s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--green-deep)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.form .btn{width:100%;margin-top:8px}
+.form .note{font-size:.78rem;color:var(--ink-soft);margin-top:14px;line-height:1.6}
+.hp{position:absolute;left:-9999px;opacity:0}
+.map{border:1px solid var(--line);aspect-ratio:16/10;background:var(--sand);margin-top:34px}
+.map iframe{width:100%;height:100%;border:0;display:block}
+.cta{background:var(--ink);color:#fff;padding:88px 0}
+.cta .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center}
+.cta h2{color:#fff;font-size:clamp(1.8rem,3.4vw,2.6rem);font-weight:400;max-width:14em}
+.cta p{color:#C9D7B8;font-size:1.04rem;margin-top:1em;max-width:36em}
+.cta .row{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
+footer.site{background:var(--ink);color:#C9D7B8;font-size:.94rem;border-top:1px solid rgba(255,255,255,.14)}
+footer.site .top{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:56px;padding:70px 0 54px}
+footer.site .brand{color:#fff}
+footer.site .brand .wm small{color:var(--green-bright)}
+footer.site p.about{margin-top:24px;max-width:34em;line-height:1.75}
+footer.site .agency{margin-top:20px;display:inline-block;border:1px solid rgba(255,255,255,.28);padding:.5em 1em;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#fff;font-weight:600}
+footer.site h4{font-family:var(--body);font-weight:600;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:#fff;margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,.18)}
+footer.site ul{list-style:none;display:flex;flex-direction:column;gap:12px}
+footer.site ul a{overflow-wrap:anywhere}
+footer.site ul a:hover{color:var(--green-bright)}
+footer.site .notice{font-size:.76rem;color:#8FA37B;line-height:1.7;padding:26px 0;border-top:1px solid rgba(255,255,255,.14);max-width:80ch}
+footer.site .legal{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:.76rem;color:#8FA37B;padding:20px 0 30px;border-top:1px solid rgba(255,255,255,.14)}
+footer.site .legal a{color:#8FA37B}
+footer.site .legal a:hover{color:var(--green-bright)}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+[data-delay="1"]{transition-delay:.09s}[data-delay="2"]{transition-delay:.18s}[data-delay="3"]{transition-delay:.27s}
+@media(max-width:1120px){
+ .hero .inner{padding-left:32px;padding-right:44px;max-width:none}
+ nav.links{gap:22px}
+ .brand .wm{font-size:1.12rem}
+ .grid2{grid-template-columns:170px 1fr;gap:44px}
+}
+@media(max-width:1000px){
+ .nav-tel{display:none}
+ .ins-matrix{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:900px){
+ nav.links{position:fixed;top:0;right:0;width:min(330px,86vw);height:100vh;height:100dvh;background:var(--green-deep);flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:0;padding:100px 32px;transform:translateX(105%);transition:transform .32s ease;z-index:60;overflow-y:auto}
+ nav.links.open{transform:none}
+ nav.links a{font-size:.9rem;padding:18px 0;width:100%;border-bottom:1px solid rgba(255,255,255,.2);border-top:0;color:#fff}
+ nav.links a:hover{color:var(--green-bright);border-color:rgba(255,255,255,.2)}
+ .p-home nav.links a[href="/"],.p-services nav.links a[href="services"],.p-insurance nav.links a[href="insurance"],.p-about nav.links a[href="about"],.p-careers nav.links a[href="careers"],.p-contact nav.links a[href="contact"]{color:var(--green-bright);border-color:rgba(255,255,255,.2)}
+ .menu-btn{display:inline-flex;z-index:70}
+ .nav-req{display:none}
+ .nav-call{display:inline-flex}
+ .nav-cta{gap:10px}
+ .nav .wrap{min-height:76px;gap:12px}
+ .hero{grid-template-columns:1fr}
+ .hero .shot{min-height:340px}
+ .hero .panel{padding:64px 0}
+ .hero .inner{margin:0;padding:0 32px}
+ .factbar .wrap{grid-template-columns:1fr 1fr}
+ .fact{padding:20px 24px;border-left:1px solid var(--line);border-bottom:1px solid var(--line)}
+ .fact:first-child,.fact:nth-child(3){border-left:0;padding-left:0}
+ .fact:nth-child(3),.fact:nth-child(4){border-bottom:0}
+ .grid2{grid-template-columns:1fr;gap:22px}
+ .slab{position:static;display:flex;align-items:center;gap:16px}
+ .slab .num{padding-bottom:0;border-bottom:0;margin-bottom:0;width:auto}
+ .matrix,.split,.hire .wrap,.cta .wrap{grid-template-columns:1fr}
+ .matrix{grid-template-columns:1fr 1fr}
+ .split{gap:38px}
+ .cta .row{justify-content:flex-start}
+ .srow{grid-template-columns:44px 1fr;gap:24px}
+ .srow ul{grid-column:2}
+ .steps-row{grid-template-columns:1fr}
+ .stepx{border-right:0;border-bottom:1px solid var(--line);padding:26px 0 22px}
+ .stepx:last-child{border-bottom:0}
+ footer.site .top{grid-template-columns:1fr 1fr;gap:40px}
+}
+@media(max-width:680px){
+ body{font-size:1rem}
+ .topbar .hide-sm{display:none}
+ .topbar .left{white-space:normal}
+ .topbar .wrap{gap:10px;padding-top:6px;padding-bottom:6px}
+ .topbar .right{gap:14px}
+ .wrap{padding:0 22px}
+ .hero .inner{padding:0 22px}
+ .factbar .wrap{padding:0 22px}
+ .band{padding:68px 0}
+ .matrix{grid-template-columns:1fr}
+ .ins-matrix{grid-template-columns:1fr 1fr}
+ .ins-matrix .ins{height:104px;font-size:.92rem;padding:0 14px}
+ .mcell{padding:30px 26px 32px}
+ .brand .logo{height:44px}
+ .brand .wm{font-size:1rem}
+ .form{padding:28px 22px}
+ .row2{grid-template-columns:1fr}
+ .crow{grid-template-columns:1fr;gap:6px;padding:18px 0}
+ .srow{grid-template-columns:1fr;gap:16px}
+ .srow .n{font-size:1.1rem}
+ .srow ul{grid-column:1}
+ footer.site .top{grid-template-columns:1fr}
+ .hire .wrap{padding-top:64px;padding-bottom:64px}
+}
+@media(max-width:400px){.brand .wm small{display:none}}
+@media(prefers-reduced-motion:reduce){
+ *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+ .reveal{opacity:1;transform:none}
+}
+.gt-wrap{display:inline-flex;align-items:center}
+#google_translate_element .goog-te-gadget{font-size:0}
+#google_translate_element .goog-te-combo{margin:0;padding:2px 6px;border-radius:var(--r);border:1px solid rgba(255,255,255,.35);background:transparent;color:#fff;font-family:var(--body);font-size:.74rem;font-weight:500;cursor:pointer;line-height:1.4}
+#google_translate_element .goog-te-combo option{color:#222A19}
+.goog-te-banner-frame,.goog-logo-link,.goog-te-gadget span{display:none!important}
+.goog-te-gadget{color:transparent!important}
+body{top:0!important}
+</style>
+</head>
+<body class="p-insurance">
+<div class="topbar">
+  <div class="wrap">
+    <span class="left">Medicaid approved &middot; <b>Serving all 83 counties in Michigan</b></span>
+    <span class="right">
+      <span class="gt-wrap"><span id="google_translate_element"></span></span>
+      <a class="hide-sm" href="mailto:mercifulhcllc@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 7 9 6 9-6"/></svg>mercifulhcllc@gmail.com</a>
+      <a href="tel:+13139177979"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(313) 917-7979</a>
+    </span>
+  </div>
+</div>
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="assets/img/logo.png" alt="" class="logo" aria-hidden="true"/><span class="wm">Merciful<br>Home Care<small>Southfield, Michigan</small></span></a>
+    <nav class="links" id="links">
+      <a href="/">Home</a><a href="services">Services</a><a href="insurance">Insurance</a><a href="about">About</a><a href="careers">Careers</a><a href="contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="nav-tel" href="tel:+13139177979"><small>Call us</small><b>(313) 917-7979</b></a>
+      <a class="btn btn-solid nav-req" href="contact">Request care</a>
+      <a class="btn btn-solid nav-call" href="tel:+13139177979" aria-label="Call (313) 917-7979"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg></button>
+    </div>
+  </div>
+</header>
+<div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+<main>
+<section class="pagehead">
+  <div class="wrap">
+    <p class="crumb"><a href="/">Home</a> &nbsp;/&nbsp; Insurance</p>
+    <h1>Insurance we accept</h1>
+    <p>Merciful Home Care accepts all insurance companies that operate in the State of Michigan. If your plan is not shown below, call us anyway. We will verify your benefits at no cost and tell you exactly what is covered.</p>
+  </div>
+</section>
+<section class="band tight">
+  <div class="wrap">
+    <div class="ins-matrix reveal"><span class="ins" data-logo="mdhhs" data-name="MDHHS">MDHHS</span><span class="ins" data-logo="humana" data-name="Humana">Humana</span><span class="ins" data-logo="amerihealth-caritas" data-name="AmeriHealth Caritas">AmeriHealth Caritas</span><span class="ins" data-logo="aetna" data-name="Aetna">Aetna</span><span class="ins" data-logo="hap-caresource" data-name="HAP CareSource">HAP CareSource</span><span class="ins" data-logo="united-healthcare" data-name="United Healthcare">United Healthcare</span><span class="ins" data-logo="molina" data-name="Molina Healthcare">Molina Healthcare</span><span class="ins" data-logo="wellcare-meridian" data-name="Wellcare by Meridian">Wellcare by Meridian</span><span class="ins" data-logo="priority-health" data-name="Priority Health">Priority Health</span><span class="ins" data-logo="daaa" data-name="Detroit Area Agency on Aging">Detroit Area Agency on Aging</span></div>
+    <p style="margin-top:30px;color:var(--ink-soft);font-size:.95rem;max-width:62em">Plan names and networks change often. The carriers above are the ones we work with most, and the list is not exhaustive. Coverage, eligible hours, and copays depend on your specific plan and your assessed level of need.</p>
+  </div>
+</section>
+
+<section class="band alt">
+  <div class="wrap grid2">
+    <div class="slab"><span class="num">01</span><p>Also accepted</p></div>
+    <div class="lead reveal">
+      <h2>Three other ways care gets paid for</h2>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="matrix reveal">
+      <div class="mcell"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></span><h3>Medicaid</h3><p>We are an approved Medicaid provider, and we can help you find out whether you or your loved one qualifies.</p></div>
+      <div class="mcell"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 14h6M9 18h4"/></svg></span><h3>Private pay</h3><p>Straightforward hourly rates with no long-term contract, for families who would rather not involve insurance.</p></div>
+      <div class="mcell"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6z"/></svg></span><h3>Long-term care insurance</h3><p>We work with long-term care policies and can help you submit what the carrier needs to release benefits.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap grid2">
+    <div class="slab"><span class="num">02</span><p>Verification</p></div>
+    <div class="lead reveal">
+      <h2>We check your benefits for you</h2>
+      <p>Insurance language is deliberately confusing. You do not have to decode it alone, and you should never have to guess before care begins.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="steps-row reveal">
+      <div class="stepx"><span class="n">01</span><h3>Send us your plan</h3><p>Call with the name on the insurance card, or send a photo of the front and back. That is all we need to start.</p></div>
+      <div class="stepx"><span class="n">02</span><h3>We verify coverage</h3><p>We contact the plan directly, confirm eligibility, and find out how many hours of in-home care are authorized.</p></div>
+      <div class="stepx"><span class="n">03</span><h3>You get a plain answer</h3><p>We tell you what is covered, what is not, and what anything would cost out of pocket, before a caregiver ever starts.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="hire">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">A program most families never hear about</p>
+      <h2>Already have someone caring for you? Let's get them paid.</h2>
+      <p>If you have a caregiver who is not being paid to care for you in your home, please let us know. We can hire that caregiver so they are paid for the services they are already providing in the member's home.</p>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Family members, friends, and neighbors are all welcome to apply</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>We handle enrollment, training, scheduling, and payroll</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Your loved one keeps the caregiver they already know and trust</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>No cost to ask, and we will verify the coverage for you</li>
+      </ul>
+    </div>
+    <div class="box reveal" data-delay="1">
+      <h3>Tell us about your caregiver</h3>
+      <p>One short call is all it takes to find out whether they qualify to be paid. We will walk you both through every step.</p>
+      <a class="btn btn-white" href="tel:+13139177979"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call (313) 917-7979</a>
+      <a class="btn btn-linew" href="contact">Send a message</a>
+    </div>
+  </div>
+</section>
+
+<section class="band alt">
+  <div class="wrap grid2">
+    <div class="slab"><span class="num">03</span><p>Questions</p></div>
+    <div class="lead reveal">
+      <h2>Coverage questions we hear a lot</h2>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:44px">
+    <div class="faq reveal">
+      <details><summary>Do you accept my insurance?</summary><p>We accept all insurance companies that operate in the State of Michigan, including Medicaid and waiver programs. Call us with your plan name and we will confirm your specific benefits at no cost.</p></details>
+      <details><summary>What if I do not have insurance?</summary><p>We offer straightforward private-pay hourly rates with no long-term contract. We will also help you find out whether you qualify for Medicaid or a waiver program that would cover the care.</p></details>
+      <details><summary>How many hours will be covered?</summary><p>That depends on your plan and your assessed level of need. After the in-home assessment we submit the documentation and tell you exactly how many authorized hours you have.</p></details>
+      <details><summary>Can you pay a caregiver I already have?</summary><p>Often, yes. If someone is already caring for you in your home without being paid, we can hire them so they are paid for the services they provide. Family members, friends, and neighbors are all welcome to apply.</p></details>
+      <details><summary>Do you serve my county?</summary><p>We service all 83 counties in the State of Michigan. Wherever your loved one lives, call us and we will put care in place.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap reveal">
+    <div><h2>Let us check your coverage</h2><p>One phone call and we will verify your benefits, explain your options, and tell you exactly where you stand. No cost, no obligation.</p></div>
+    <div class="row"><a class="btn btn-white" href="tel:+13139177979">Call (313) 917-7979</a><a class="btn btn-linew" href="contact">Contact us</a></div>
+  </div>
+</section>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <a class="brand" href="/"><img src="assets/img/logo.png" alt="" class="logo" style="height:58px;background:#fff;padding:6px 9px;border-radius:4px" aria-hidden="true"/><span class="wm">Merciful<br>Home Care<small>Southfield, Michigan</small></span></a>
+        <p class="about">Compassionate, in-home personal care that keeps your loved one safe, comfortable, and independent in the place they know best.</p>
+        <span class="agency">Agency #9273048</span>
+      </div>
+      <div><h4>Explore</h4><ul><li><a href="/">Home</a></li><li><a href="services">Services</a></li><li><a href="insurance">Insurance We Accept</a></li><li><a href="about">About Us</a></li><li><a href="careers">Careers</a></li><li><a href="contact">Contact Us</a></li></ul></div>
+      <div><h4>Reach Us</h4><ul><li><a href="tel:+13139177979">(313) 917-7979</a></li><li><a href="mailto:mercifulhcllc@gmail.com">mercifulhcllc@gmail.com</a></li><li>Fax: (248) 996-9460</li><li><a href="https://maps.google.com/maps?q=17348+W.+12+Mile+Rd.+Southfield+MI+48076" target="_blank" rel="noopener">17348 W. 12 Mile Rd., Ste 106<br>Southfield, MI 48076</a></li><li>Mon-Fri: 9:00am - 5:00pm</li></ul></div>
+    </div>
+    <p class="notice"><strong>Notice of Nondiscrimination:</strong> Merciful Home Care complies with applicable federal civil rights laws and does not discriminate, exclude, or treat people differently on the basis of social status, political belief, race, color, religion, national origin, sex (including sexual orientation and gender identity), age, or disability with regard to admission, access to services, or employment.</p>
+    <div class="legal"><span>&copy; 2026 Merciful Home Care LLC. All rights reserved.</span><span>Medicaid Approved &middot; Agency #9273048</span><span>Created by <a href="https://shammasdevelopment.io/" target="_blank" rel="noopener">Shammas Development</a></span></div>
+  </div>
+</footer>
+<script>
+  const menuBtn=document.getElementById('menuBtn'),links=document.getElementById('links'),overlay=document.getElementById('navOverlay');
+  const setMenu=(open)=>{links.classList.toggle('open',open);overlay.classList.toggle('open',open);document.body.classList.toggle('menu-open',open);menuBtn.setAttribute('aria-expanded',open);};
+  menuBtn.addEventListener('click',()=>setMenu(!links.classList.contains('open')));
+  overlay.addEventListener('click',()=>setMenu(false));
+  links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false);});
+  window.addEventListener('resize',()=>{if(window.innerWidth>900)setMenu(false);});
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  /* Insurance logos: drop a PNG named <slug>.png into assets/img/insurance/ and it
+     replaces the text wordmark automatically. No HTML edit, no broken images. */
+  document.querySelectorAll('[data-logo]').forEach(el=>{
+    const im=new Image();
+    im.alt=el.dataset.name||'';
+    im.loading='lazy';
+    im.onload=()=>{el.textContent='';el.appendChild(im);};
+    im.src='assets/img/insurance/'+el.dataset.logo+'.png';
+  });
+</script>
+
+<script type="text/javascript">
+function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en',autoDisplay:false},'google_translate_element');}
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src="assets/a11y.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+MERCIFUL HOME CARE — SITE SETUP
+===============================
+
+The site is a plain static site: no build step, no dependencies. Open index.html
+in a browser to preview, or drop the folder on Vercel / any web host.
+
+Pages: index, services, insurance, about, careers, contact
+Clean URLs (/services, not /services.html) are handled by vercel.json on Vercel
+and by .htaccess on Apache hosting. Both are already in the folder.
+
+
+1. FORMS (required before launch — 2 minutes, free)
+---------------------------------------------------
+The contact form and the careers application both post to Web3Forms and need one
+free access key.
+
+  1. Go to https://web3forms.com
+  2. Enter the delivery email:  mercifulhcllc@gmail.com
+  3. They email you an "Access Key" (a long code)
+  4. In BOTH contact.html and careers.html, find:
+         <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+     and replace YOUR_WEB3FORMS_ACCESS_KEY with the key
+  5. Save. Submissions now arrive at mercifulhcllc@gmail.com
+
+Spam protection (honeypot field) is already built in.
+
+
+2. INSURANCE CARRIER LOGOS (client requested)
+----------------------------------------------
+The scrolling carrier strip on the home, services, insurance, and contact pages
+currently shows each carrier as a text wordmark, because we do not have logo
+files yet.
+
+To switch to real logos: drop a transparent PNG into assets/img/insurance/ using
+the exact filename listed in that folder's README.txt. The page detects the file
+and swaps the text for the image automatically. No HTML edit, and if a file is
+missing the text simply stays — nothing breaks.
+
+  assets/img/insurance/humana.png       -> replaces the "Humana" wordmark
+  assets/img/insurance/aetna.png        -> replaces the "Aetna" wordmark
+  ...and so on for all ten carriers
+
+IMPORTANT: these are registered trademarks owned by the insurers. Before
+publishing them, get the logo files from each payer's brand/media kit or from
+your provider representative, and confirm you are permitted to display them as a
+participating provider. Most payers have a provider marketing page with approved
+assets and usage rules. Do not pull logos off Google Images.
+
+
+3. THINGS TO CONFIRM WITH THE CLIENT
+-------------------------------------
+These were filled in with sensible defaults and should be verified:
+
+  - Office hours. Currently Mon-Fri 9:00am - 5:00pm site-wide.
+  - Phone. Currently (313) 917-7979 (Neil's cell, from the business card).
+    If there is a separate office line, that is usually the better main number.
+  - Social media. No links are on the site; there was nothing on the card.
+  - Domain. Meta tags reference mercifulhomecare.com. Update if the domain differs.
+  - Google Business Profile. Once it exists, add a "Leave a review" link to the
+    top bar and footer (the Spirit site has this pattern).
+
+
+4. NOTES
+--------
+  - Photos in assets/img/ are the same licensed senior-care stock set used on the
+    Spirit Home Health Care site. Confirm the license covers both properties.
+  - Logo: assets/img/logo.png is the supplied MHC dove-and-olive-branch mark with
+    the white background removed. The original JPG is kept as logo.jpg, and the
+    business card as business-card.jpg, for reference.
+  - The CSS and the header/footer markup are duplicated inside every HTML file.
+    If you change one, change all six.
+  - Google Translate (top bar) activates automatically once the site is on a real
+    https:// domain.
+  - Accessibility widget: assets/a11y.js + a11y.css, same as the Spirit site.
+  - There is no live chat widget yet. If the client wants Tawk.to like Spirit has,
+    it is one script tag before </body> on each page.
