@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>About Us | Merciful Home Care</title>
-<meta name="description" content="Merciful Home Care is a Medicaid approved Michigan home care agency in Southfield, serving all 83 counties with compassionate in-home personal care." />
-<meta property="og:title" content="About Us | Merciful Home Care" />
-<meta property="og:description" content="Merciful Home Care is a Medicaid approved Michigan home care agency in Southfield, serving all 83 counties with compassionate in-home personal care." />
+<title>Resources for Families &amp; Caregivers | Merciful Home Care</title>
+<meta name="description" content="MDHHS programs, downloadable Michigan Home Help forms, and support services for caregivers and patients across Michigan. Merciful Home Care, Southfield MI." />
+<meta property="og:title" content="Resources for Families &amp; Caregivers | Merciful Home Care" />
+<meta property="og:description" content="MDHHS programs, downloadable Michigan Home Help forms, and support services for caregivers and patients across Michigan. Merciful Home Care, Southfield MI." />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="assets/img/logo.png" />
 <link rel="icon" href="favicon.ico" sizes="any">
@@ -324,9 +324,43 @@ body{top:0!important}
  .nav-call{display:inline-flex}
  .nav-tel{display:none}
 }
+.dl{border-top:1px solid var(--line)}
+.dl a.row{display:grid;grid-template-columns:44px 1fr auto;align-items:center;gap:22px;padding:22px 4px;border-bottom:1px solid var(--line);transition:background .25s,padding .25s}
+.dl a.row:hover{background:var(--sand);padding-left:14px;padding-right:14px}
+.dl .ft{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:var(--r);background:var(--sand-deep);color:var(--green-deep);font-family:var(--body);font-weight:700;font-size:.58rem;letter-spacing:.06em}
+.dl .nm{font-family:var(--display);font-size:1.14rem;font-weight:500;color:var(--ink);line-height:1.3}
+.dl .nm small{display:block;font-family:var(--body);font-size:.87rem;font-weight:400;color:var(--ink-soft);letter-spacing:0;margin-top:4px;line-height:1.5}
+.dl .get{display:inline-flex;align-items:center;gap:.5em;font-weight:600;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--green-deep);white-space:nowrap}
+.dl .get svg{width:15px;height:15px}
+.linkgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:44px}
+.linkgrid a{background:#fff;padding:30px 32px 32px;transition:background .3s}
+.linkgrid a:hover{background:var(--sand)}
+.linkgrid h3{font-size:1.2rem;font-weight:500;color:var(--ink);display:flex;align-items:center;justify-content:space-between;gap:16px}
+.linkgrid h3 svg{width:17px;height:17px;color:var(--green);flex:none}
+.linkgrid p{color:var(--ink-soft);font-size:.94rem;margin-top:9px;line-height:1.6}
+.callout{background:var(--sand);border-left:3px solid var(--green);padding:26px 30px;margin-top:40px}
+.callout h3{font-size:1.16rem;font-weight:500;margin-bottom:8px}
+.callout p{color:var(--ink-soft);font-size:.95rem}
+.callout p+p{margin-top:8px}
+.bigdl{display:grid;grid-template-columns:1.25fr 1fr;gap:0;border:1px solid var(--line);margin-top:8px}
+.bigdl .l{padding:46px 44px 48px}
+.bigdl .r{background:var(--green-deep);color:#fff;padding:46px 44px 48px;display:flex;flex-direction:column;justify-content:center;gap:16px}
+.bigdl .r h3{color:#fff;font-size:1.4rem;font-weight:500}
+.bigdl .r p{color:#DCE9CC;font-size:.95rem}
+.bigdl .l h3{font-size:1.5rem;font-weight:500;margin-bottom:12px}
+.bigdl .l p{color:var(--ink-soft)}
+.bigdl .meta{display:flex;gap:26px;flex-wrap:wrap;margin-top:24px;padding-top:22px;border-top:1px solid var(--line);font-size:.82rem;color:var(--ink-soft)}
+.bigdl .meta b{display:block;font-family:var(--body);font-weight:600;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--green);margin-bottom:4px}
+@media(max-width:860px){.linkgrid{grid-template-columns:1fr}.bigdl{grid-template-columns:1fr}}
+@media(max-width:680px){
+ .dl a.row{grid-template-columns:36px 1fr;gap:16px}
+ .dl .ft{width:36px;height:36px;font-size:.52rem}
+ .dl .get{grid-column:2}
+ .bigdl .l,.bigdl .r{padding:32px 24px 34px}
+}
 </style>
 </head>
-<body class="p-about">
+<body class="p-resources">
 <div class="topbar">
   <div class="wrap">
     <span class="left">Medicaid approved &middot; <b>Serving all 83 counties in Michigan</b></span>
@@ -355,84 +389,72 @@ body{top:0!important}
 <main>
 <section class="pagehead">
   <div class="wrap">
-    <p class="crumb"><a href="/">Home</a> &nbsp;/&nbsp; About</p>
-    <h1>Home care with mercy at the center</h1>
-    <p>Merciful Home Care is a Michigan home care agency built around a simple idea: care should feel like family showing up, not a stranger clocking in.</p>
+    <p class="crumb"><a href="/">Home</a> &nbsp;/&nbsp; Resources</p>
+    <h1>Resources for families and caregivers</h1>
+    <p>Home care rarely arrives on its own. Most families are also sorting out Medicaid, transportation, meals, and paperwork at the same time. These are the programs, agencies, and forms we point people to most often, gathered in one place so you are not hunting for them.</p>
   </div>
 </section>
-<section class="band">
-  <div class="wrap split">
-    <div class="art reveal"><img src="assets/img/care-plan.jpg" alt="A care coordinator meeting with a client at home" loading="lazy"/></div>
-    <div class="reveal" data-delay="1">
-      <p class="eyebrow">Our story</p>
-      <h2 style="font-size:clamp(1.8rem,3.2vw,2.4rem);font-weight:400;margin:.4em 0 .7em">The dove and the olive branch stand for peace, mercy, and safe arrival.</h2>
-      <p style="color:var(--ink-soft)">That is what we want a family to feel when we walk through the door: relief that someone competent is finally here, and confidence that they will keep showing up.</p>
-      <p style="color:var(--ink-soft);margin-top:1em">Based in Southfield and serving all 83 counties in Michigan, we provide non-medical in-home care to seniors, adults with disabilities, and anyone recovering at home. We are a Medicaid approved provider, Agency #9273048, and we accept all insurance companies operating in the state.</p>
-      <p style="color:var(--ink-soft);margin-top:1em">We stay deliberately reachable. When you call, a person answers. When something changes, you hear it from us first.</p>
+
+<section class="band tight">
+  <div class="wrap">
+    <div class="callout reveal">
+      <h3>Need help right now?</h3>
+      <p><strong>Call us at (313) 917-7979.</strong> We will tell you which program fits, verify your insurance at no cost, and help you fill out the forms. You do not have to be a client to ask.</p>
+      <p>To report suspected abuse, neglect, or exploitation of a vulnerable adult, call Michigan Adult Protective Services at <strong>855-444-3911</strong>, 24 hours a day. In an emergency, call 911.</p>
     </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap grid2">
+    <div class="slab"><span class="num">01</span><p>State of Michigan</p></div>
+    <div class="lead reveal">
+      <h2>MDHHS and state programs</h2>
+      <p>The Michigan Department of Health and Human Services runs Medicaid, the Home Help program that pays for most of the care we provide, and the adult services that sit alongside it.</p>
+    </div>
+  </div>
+  <div class="wrap"><div class="linkgrid reveal"><a href="https://www.michigan.gov/mdhhs" target="_blank" rel="noopener"><h3>Michigan Dept. of Health &amp; Human Services (MDHHS) <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></h3><p>The state department behind Medicaid, Home Help, food assistance, and adult protective services. The starting point for almost every program on this page.</p></a><a href="https://www.michigan.gov/mdhhs/adult-child-serv/adults-and-seniors" target="_blank" rel="noopener"><h3>MDHHS &mdash; Adults &amp; Seniors <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></h3><p>Program pages for older adults and adults with disabilities, including in-home services and placement options.</p></a><a href="https://www.michigan.gov/mdhhs/assistance-programs/medicaid" target="_blank" rel="noopener"><h3>Michigan Medicaid <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></h3><p>Eligibility rules, health plan choices, and what Medicaid covers in Michigan.</p></a><a href="https://newmibridges.michigan.gov" target="_blank" rel="noopener"><h3>MI Bridges <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></h3><p>Apply online for Medicaid, food assistance, cash assistance, and more, and check your case status.</p></a><a href="https://www.michigan.gov/mdhhs/adult-child-serv/adults-and-seniors/forms-pubs" target="_blank" rel="noopener"><h3>MDHHS Forms &amp; Publications <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></h3><p>The official, always-current library of adult services forms. Use this if you need a version newer than the copies we host.</p></a><a href="https://www.michigan.gov/mdhhs/inside-mdhhs/hotlines" target="_blank" rel="noopener"><h3>MDHHS Hotlines <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></h3><p>Every MDHHS phone line in one place, including the 24-hour Adult Protective Services reporting number.</p></a></div></div>
+</section>
+
+<section class="band alt">
+  <div class="wrap grid2">
+    <div class="slab"><span class="num">02</span><p>Families &amp; patients</p></div>
+    <div class="lead reveal">
+      <h2>Support beyond the care visit</h2>
+      <p>Meals, rides, benefits counselling, dementia support, and someone to call when something is not right. All of these are free or low cost, and none of them require you to be our client.</p>
+    </div>
+  </div>
+  <div class="wrap"><div class="linkgrid reveal"><a href="https://www.michigan.gov/mdhhs/adult-child-serv/abuse-neglect/adult-ps" target="_blank" rel="noopener"><h3>Adult Protective Services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></h3><p>If you suspect a vulnerable adult is being abused, neglected, or financially exploited, report it. Available 24 hours a day at 855-444-3911.</p></a><a href="https://www.michigan.gov/mdhhs/adult-child-serv/adults-and-seniors/acls" target="_blank" rel="noopener"><h3>MDHHS Aging &amp; Community Living Services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></h3><p>Statewide programs for older adults and adults with disabilities, including nutrition, caregiver support, and the network of Area Agencies on Aging.</p></a><a href="https://www.detroitseniorsolution.org" target="_blank" rel="noopener"><h3>Detroit Area Agency on Aging <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></h3><p>Meals, transportation, caregiver support, and benefits counselling for Wayne County, Detroit, Highland Park, Hamtramck, and the Grosse Pointes.</p></a><a href="https://www.mmapinc.org" target="_blank" rel="noopener"><h3>MMAP &mdash; Medicare/Medicaid Assistance Program <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></h3><p>Free, unbiased one-on-one counselling on Medicare and Medicaid decisions. Not a sales call.</p></a><a href="https://www.mi211.org" target="_blank" rel="noopener"><h3>Michigan 2-1-1 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></h3><p>Dial 2-1-1 for local help with rent, utilities, food, transportation, and healthcare anywhere in the state.</p></a><a href="https://mltcop.org" target="_blank" rel="noopener"><h3>Michigan Long Term Care Ombudsman <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></h3><p>Free advocates who resolve complaints about care in nursing homes, adult foster care, and homes for the aged.</p></a><a href="https://www.alz.org/gmc" target="_blank" rel="noopener"><h3>Alzheimer's Association &mdash; Michigan <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></h3><p>Dementia caregiver education, local support groups, and a 24/7 helpline at 800-272-3900.</p></a><a href="https://eldercare.acl.gov" target="_blank" rel="noopener"><h3>Eldercare Locator <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></h3><p>Enter any Michigan ZIP code to find the Area Agency on Aging and local services for that community. Run by the U.S. Administration for Community Living.</p></a><a href="https://www.caregiver.org" target="_blank" rel="noopener"><h3>Family Caregiver Alliance <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></h3><p>Practical guides on burnout, difficult conversations, legal planning, and caring for yourself while caring for someone else.</p></a></div></div>
+</section>
+
+<section class="band" id="forms">
+  <div class="wrap grid2">
+    <div class="slab"><span class="num">03</span><p>Forms</p></div>
+    <div class="lead reveal">
+      <h2>MDHHS forms you can download</h2>
+      <p>These are the official MDHHS forms and publications used for Home Help and adult services, hosted here so you can download them without hunting through the state website. Bring the completed forms to us and we will take it from there.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="dl reveal"><a class="row" href="assets/forms/mdhhs/DHS-390.docx"><span class="ft">WORD</span><span class="nm">Adult Services Application &mdash; DHS-390<small>The application for MDHHS Home Help and other adult services. Start here if you have not been assessed yet.</small></span><span class="get">Download <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v12M7 11l5 5 5-5"/><path d="M4 20h16"/></svg></span></a><a class="row" href="assets/forms/mdhhs/MDHHS-6200.dotx"><span class="ft">WORD</span><span class="nm">Adult Services Medical Needs Certification &mdash; MDHHS-6200<small>Completed by the doctor or nurse practitioner to certify the medical need for in-home personal care.</small></span><span class="get">Download <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v12M7 11l5 5 5-5"/><path d="M4 20h16"/></svg></span></a><a class="row" href="assets/forms/mdhhs/MDHHS-Pub-1733.pdf"><span class="ft">PDF</span><span class="nm">Home Help Program Client Handbook &mdash; MDHHS-Pub-1733<small>The full guide to how Home Help works: eligibility, covered tasks, provider rules, and payment.</small></span><span class="get">Download <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v12M7 11l5 5 5-5"/><path d="M4 20h16"/></svg></span></a><a class="row" href="assets/forms/mdhhs/DHS-PUB-0815.pdf"><span class="ft">PDF</span><span class="nm">Home Help Services Brochure &mdash; DHS-Pub-815<small>A short plain-language overview of the Home Help program. Also available in Arabic and Spanish below.</small></span><span class="get">Download <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v12M7 11l5 5 5-5"/><path d="M4 20h16"/></svg></span></a><a class="row" href="assets/forms/mdhhs/Pub-815-AR.pdf"><span class="ft">PDF</span><span class="nm">Home Help Services Brochure (Arabic) &mdash; DHS-Pub-815-AR<small>The Home Help overview brochure in Arabic.</small></span><span class="get">Download <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v12M7 11l5 5 5-5"/><path d="M4 20h16"/></svg></span></a><a class="row" href="assets/forms/mdhhs/Pub-815-SP.pdf"><span class="ft">PDF</span><span class="nm">Home Help Services Brochure (Spanish) &mdash; DHS-Pub-815-SP<small>The Home Help overview brochure in Spanish.</small></span><span class="get">Download <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v12M7 11l5 5 5-5"/><path d="M4 20h16"/></svg></span></a><a class="row" href="assets/forms/mdhhs/HCBS_Comparison_Chart-FINAL.pdf"><span class="ft">PDF</span><span class="nm">Home &amp; Community Based Services Comparison Chart<small>Side-by-side comparison of Michigan in-home programs, so you can see which one fits your situation.</small></span><span class="get">Download <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v12M7 11l5 5 5-5"/><path d="M4 20h16"/></svg></span></a><a class="row" href="assets/forms/mdhhs/MDHHS-Pub-1513.pdf"><span class="ft">PDF</span><span class="nm">Provider Support Contact Card &mdash; MDHHS-Pub-1513<small>Who to call at MDHHS about provider enrollment, timesheets, and payment questions.</small></span><span class="get">Download <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v12M7 11l5 5 5-5"/><path d="M4 20h16"/></svg></span></a><a class="row" href="assets/forms/mdhhs/DHS-Pub-0005.pdf"><span class="ft">PDF</span><span class="nm">Adult Protective Services Pamphlet &mdash; DHS-Pub-5<small>How to recognise and report suspected abuse, neglect, or exploitation of a vulnerable adult.</small></span><span class="get">Download <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v12M7 11l5 5 5-5"/><path d="M4 20h16"/></svg></span></a><a class="row" href="assets/forms/mdhhs/DHS-PUB-0371.pdf"><span class="ft">PDF</span><span class="nm">Adult Foster Care Brochure &mdash; DHS-Pub-371<small>For families weighing a licensed adult foster care home instead of, or alongside, in-home care.</small></span><span class="get">Download <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v12M7 11l5 5 5-5"/><path d="M4 20h16"/></svg></span></a><a class="row" href="assets/forms/mdhhs/DCH-0092-MOAHR.dotx"><span class="ft">WORD</span><span class="nm">Request for Hearing &mdash; DCH-0092-MOAHR<small>Use this to appeal a Medicaid, PACE, or waiver decision you disagree with.</small></span><span class="get">Download <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v12M7 11l5 5 5-5"/><path d="M4 20h16"/></svg></span></a><a class="row" href="assets/forms/mdhhs/DHS-1661.dotx"><span class="ft">WORD</span><span class="nm">Insurance Assistance Program Application &mdash; DHS-1661<small>Help paying health insurance premiums for those who qualify.</small></span><span class="get">Download <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v12M7 11l5 5 5-5"/><path d="M4 20h16"/></svg></span></a></div>
+    <p style="margin-top:26px;color:var(--ink-soft);font-size:.92rem;max-width:60em">MDHHS revises these documents periodically. The copies above were downloaded from the state on 18 August 2026. For the newest version of any form, see the <a href="https://www.michigan.gov/mdhhs/adult-child-serv/adults-and-seniors/forms-pubs" target="_blank" rel="noopener" style="color:var(--green-deep);text-decoration:underline">official MDHHS Forms &amp; Publications library</a>, or just call us and we will send you the current one.</p>
   </div>
 </section>
 
 <section class="band alt">
   <div class="wrap grid2">
-    <div class="slab"><span class="num">01</span><p>What we stand for</p></div>
+    <div class="slab"><span class="num">04</span><p>Our caregivers</p></div>
     <div class="lead reveal">
-      <h2>Six things we will not compromise on</h2>
-    </div>
-  </div>
-  <div class="wrap"><div class="matrix reveal"><div class="mcell"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 5.6a5.4 5.4 0 0 0-7.7 0L12 6.7l-1.1-1.1a5.4 5.4 0 0 0-7.7 7.7l1.1 1.1L12 22l7.7-7.6 1.1-1.1a5.4 5.4 0 0 0 0-7.7z"/></svg></span><h3>Dignity first</h3><p>Bathing, dressing, and toileting are intimate. Our caregivers are trained to protect a person's dignity in every one of those moments.</p></div><div class="mcell"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg></span><h3>The right match</h3><p>Skills matter, but so does personality. We introduce caregivers we believe genuinely fit, and we keep looking until it is right.</p></div><div class="mcell"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 10.5 12 3l9 7.5V21a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M9 22v-7h6v7"/></svg></span><h3>It is their home</h3><p>We work inside someone else's routine, not our own. The house rules belong to the family, and we follow them.</p></div><div class="mcell"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><h3>Answer the phone</h3><p>No phone trees, no waiting a week for a call back. Families and caregivers both get a real person, same day.</p></div><div class="mcell"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6z"/></svg></span><h3>Trust, verified</h3><p>Background checks, reference checks, training, and supervision. Every caregiver, every time, without exception.</p></div><div class="mcell"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><h3>Reach everyone</h3><p>All 83 counties, all Michigan insurance. Where you live should not decide whether you get care.</p></div></div></div>
-</section>
-
-<div class="photoband">
-  <img src="assets/img/errands.jpg" alt="" aria-hidden="true"/>
-  <div class="q reveal">
-    <blockquote>If home is where they want to be, <em>we can help them stay there.</em></blockquote>
-    <p class="attr">Seniors &middot; Adults with disabilities &middot; Recovery at home &middot; Family caregivers</p>
-  </div>
-</div>
-
-<section class="band">
-  <div class="wrap grid2">
-    <div class="slab"><span class="num">02</span><p>Who we care for</p></div>
-    <div class="lead reveal">
-      <h2>Four situations we are built for</h2>
-    </div>
-  </div>
-  <div class="wrap" style="margin-top:44px">
-    <div class="vlist reveal">
-      <div class="vrow"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg></span><div><h3>Seniors aging at home</h3><p>Daily support that makes staying at home realistic and safe, for years longer than it otherwise would be.</p></div></div>
-      <div class="vrow"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 5.6a5.4 5.4 0 0 0-7.7 0L12 6.7l-1.1-1.1a5.4 5.4 0 0 0-7.7 7.7l1.1 1.1L12 22l7.7-7.6 1.1-1.1a5.4 5.4 0 0 0 0-7.7z"/></svg></span><div><h3>Adults with disabilities</h3><p>Personal care and household support that protects independence rather than replacing it.</p></div></div>
-      <div class="vrow"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><h3>Recovering after a hospital stay</h3><p>Short-term help through the weeks when a fall or a readmission is most likely.</p></div></div>
-      <div class="vrow"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 10.5 12 3l9 7.5V21a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M9 22v-7h6v7"/></svg></span><div><h3>Families carrying it alone</h3><p>Respite for the daughter, son, or spouse who has been doing everything and is running out of room.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<section class="hire">
-  <div class="wrap">
-    <div class="reveal">
-      <p class="eyebrow">A program most families never hear about</p>
-      <h2>Already have someone caring for you? Let's get them paid.</h2>
-      <p>If you have a caregiver who is not being paid to care for you in your home, please let us know. We can hire that caregiver so they are paid for the services they are already providing in the member's home.</p>
-      <ul>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Family members, friends, and neighbors are all welcome to apply</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>We handle enrollment, training, scheduling, and payroll</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Your loved one keeps the caregiver they already know and trust</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>No cost to ask, and we will verify the coverage for you</li>
-      </ul>
-    </div>
-    <div class="box reveal" data-delay="1">
-      <h3>Tell us about your caregiver</h3>
-      <p>One short call is all it takes to find out whether they qualify to be paid. We will walk you both through every step.</p>
-      <a class="btn btn-white" href="tel:+13139177979"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call (313) 917-7979</a>
-      <a class="btn btn-linew" href="contact">Send a message</a>
+      <h2>Working for Merciful Home Care?</h2>
+      <p>Timesheets, submission deadlines, and paystub access all live on their own page.</p>
+      <a class="btn btn-line" href="timesheets">Go to Timesheets &amp; Paystubs</a>
     </div>
   </div>
 </section>
 
 <section class="cta">
   <div class="wrap reveal">
-    <div><h2>Come meet us</h2><p>Call (313) 917-7979 or send a message. We will answer your questions honestly, even if the answer is that you do not need us yet.</p></div>
+    <div><h2>Not sure where to start?</h2><p>Call us and we will point you to the right program, check your coverage, and help with the paperwork. There is no cost to ask.</p></div>
     <div class="row"><a class="btn btn-white" href="tel:+13139177979">Call (313) 917-7979</a><a class="btn btn-linew" href="contact">Contact us</a></div>
   </div>
 </section>

@@ -4,7 +4,7 @@ MERCIFUL HOME CARE — SITE SETUP
 The site is a plain static site: no build step, no dependencies. Open index.html
 in a browser to preview, or drop the folder on Vercel / any web host.
 
-Pages: index, services, insurance, about, careers, contact
+Pages: index, services, insurance, resources, timesheets, about, careers, contact
 Clean URLs (/services, not /services.html) are handled by vercel.json on Vercel
 and by .htaccess on Apache hosting. Both are already in the folder.
 
@@ -27,14 +27,14 @@ Spam protection (honeypot field) is already built in.
 
 2. INSURANCE CARRIER LOGOS (client requested)
 ----------------------------------------------
-The scrolling carrier strip on the home, services, insurance, and contact pages
-currently shows each carrier as a text wordmark, because we do not have logo
-files yet.
+The carrier strip now sits directly under the hero on the home page, and still
+shows each carrier as a text wordmark because we do not have logo files yet.
 
-To switch to real logos: drop a transparent PNG into assets/img/insurance/ using
-the exact filename listed in that folder's README.txt. The page detects the file
-and swaps the text for the image automatically. No HTML edit, and if a file is
-missing the text simply stays — nothing breaks.
+To switch to real logos: drop a file into assets/img/insurance/ using the exact
+filename listed in that folder's README.txt. .png is tried first, then .svg,
+then .jpg. The page detects the file and swaps the text for the image
+automatically. No HTML edit, and if a file is missing the text simply stays —
+nothing breaks.
 
   assets/img/insurance/humana.png       -> replaces the "Humana" wordmark
   assets/img/insurance/aetna.png        -> replaces the "Aetna" wordmark
@@ -47,7 +47,58 @@ participating provider. Most payers have a provider marketing page with approved
 assets and usage rules. Do not pull logos off Google Images.
 
 
-3. THINGS TO CONFIRM WITH THE CLIENT
+3. PAYSTUB PORTAL (open item — needs the payroll provider)
+-----------------------------------------------------------
+timesheets.html has a "Paystubs" section (#paystubs) with a placeholder. Once
+the client tells us which payroll system they use (ADP, Paychex, Gusto,
+QuickBooks Payroll, etc.), open timesheets.html, find the HTML comment that
+starts "PAYSTUB PORTAL:", and follow it: swap the placeholder paragraph for the
+provider's employee login URL on a button. It is a one-line change.
+
+Until then the section tells caregivers to call or email the office for a copy,
+which is what actually happens today.
+
+
+4. FORMS AND RESOURCES
+-----------------------
+resources.html   Caregiver and family resources. Links out to MDHHS, Michigan
+                 Medicaid, MI Bridges, Adult Protective Services, Area Agencies
+                 on Aging, MMAP, 2-1-1, and the Long Term Care Ombudsman.
+                 The #forms section lists 12 official MDHHS forms and
+                 publications, hosted locally in assets/forms/mdhhs/.
+
+timesheets.html  The Merciful Home Care Monthly Provider Log Sheet
+                 (assets/forms/mhc-monthly-provider-log-sheet.pdf), how to fill
+                 it in, where to submit it, and the paystub section above.
+
+The MDHHS files were downloaded from the state on 18 August 2026. MDHHS revises
+them periodically. To refresh, pull the current versions from
+michigan.gov/mdhhs/adult-child-serv/adults-and-seniors/forms-pubs and overwrite
+the files in assets/forms/mdhhs/ using the same filenames — no HTML edit needed.
+The page already links out to that official library as the always-current source.
+
+
+5. PHOTOS (open item — client asked for these to change)
+---------------------------------------------------------
+The client wants the photography changed so the site does not look like Spirit
+Home Health Care. The fonts have been changed (see below) but the photos are
+still the shared stock set. Slots that need new images, all in assets/img/:
+
+  hero.jpg            home page hero, landscape, roughly 1200x900 or larger
+  companionship.jpg   full-width quote band on the home page
+  mobility.jpg        "Why families choose us" split section
+  care-plan.jpg       services / about
+  personal-care.jpg   services
+  respite.jpg         services
+  errands.jpg         services
+  business-card.jpg   reference only, not displayed
+
+Real photos of Merciful caregivers and clients (with signed release) would
+separate the two companies far better than another stock set. Keep the same
+filenames and the site picks them up with no code change.
+
+
+6. THINGS TO CONFIRM WITH THE CLIENT
 -------------------------------------
 These were filled in with sensible defaults and should be verified:
 
@@ -60,15 +111,21 @@ These were filled in with sensible defaults and should be verified:
     top bar and footer (the Spirit site has this pattern).
 
 
-4. NOTES
+7. NOTES
 --------
+  - Typeface: Fraunces (headings) + Source Sans 3 (body), changed from
+    Newsreader + Inter at the client's request to separate the brand from the
+    Spirit Home Health Care site. Loaded from Google Fonts in the <head> of
+    every page.
+  - The main nav now has eight items, so it collapses to the hamburger menu
+    below 1180px instead of 900px.
   - Photos in assets/img/ are the same licensed senior-care stock set used on the
     Spirit Home Health Care site. Confirm the license covers both properties.
   - Logo: assets/img/logo.png is the supplied MHC dove-and-olive-branch mark with
     the white background removed. The original JPG is kept as logo.jpg, and the
     business card as business-card.jpg, for reference.
   - The CSS and the header/footer markup are duplicated inside every HTML file.
-    If you change one, change all six.
+    If you change one, change all eight.
   - Google Translate (top bar) activates automatically once the site is on a real
     https:// domain.
   - Accessibility widget: assets/a11y.js + a11y.css, same as the Spirit site.

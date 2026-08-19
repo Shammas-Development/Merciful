@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>About Us | Merciful Home Care</title>
-<meta name="description" content="Merciful Home Care is a Medicaid approved Michigan home care agency in Southfield, serving all 83 counties with compassionate in-home personal care." />
-<meta property="og:title" content="About Us | Merciful Home Care" />
-<meta property="og:description" content="Merciful Home Care is a Medicaid approved Michigan home care agency in Southfield, serving all 83 counties with compassionate in-home personal care." />
+<title>Caregiver Timesheets &amp; Paystubs | Merciful Home Care</title>
+<meta name="description" content="Download the Merciful Home Care monthly provider log sheet, see how to complete and submit it, and access paystub information. Southfield, Michigan." />
+<meta property="og:title" content="Caregiver Timesheets &amp; Paystubs | Merciful Home Care" />
+<meta property="og:description" content="Download the Merciful Home Care monthly provider log sheet, see how to complete and submit it, and access paystub information. Southfield, Michigan." />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="assets/img/logo.png" />
 <link rel="icon" href="favicon.ico" sizes="any">
@@ -324,9 +324,43 @@ body{top:0!important}
  .nav-call{display:inline-flex}
  .nav-tel{display:none}
 }
+.dl{border-top:1px solid var(--line)}
+.dl a.row{display:grid;grid-template-columns:44px 1fr auto;align-items:center;gap:22px;padding:22px 4px;border-bottom:1px solid var(--line);transition:background .25s,padding .25s}
+.dl a.row:hover{background:var(--sand);padding-left:14px;padding-right:14px}
+.dl .ft{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:var(--r);background:var(--sand-deep);color:var(--green-deep);font-family:var(--body);font-weight:700;font-size:.58rem;letter-spacing:.06em}
+.dl .nm{font-family:var(--display);font-size:1.14rem;font-weight:500;color:var(--ink);line-height:1.3}
+.dl .nm small{display:block;font-family:var(--body);font-size:.87rem;font-weight:400;color:var(--ink-soft);letter-spacing:0;margin-top:4px;line-height:1.5}
+.dl .get{display:inline-flex;align-items:center;gap:.5em;font-weight:600;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--green-deep);white-space:nowrap}
+.dl .get svg{width:15px;height:15px}
+.linkgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:44px}
+.linkgrid a{background:#fff;padding:30px 32px 32px;transition:background .3s}
+.linkgrid a:hover{background:var(--sand)}
+.linkgrid h3{font-size:1.2rem;font-weight:500;color:var(--ink);display:flex;align-items:center;justify-content:space-between;gap:16px}
+.linkgrid h3 svg{width:17px;height:17px;color:var(--green);flex:none}
+.linkgrid p{color:var(--ink-soft);font-size:.94rem;margin-top:9px;line-height:1.6}
+.callout{background:var(--sand);border-left:3px solid var(--green);padding:26px 30px;margin-top:40px}
+.callout h3{font-size:1.16rem;font-weight:500;margin-bottom:8px}
+.callout p{color:var(--ink-soft);font-size:.95rem}
+.callout p+p{margin-top:8px}
+.bigdl{display:grid;grid-template-columns:1.25fr 1fr;gap:0;border:1px solid var(--line);margin-top:8px}
+.bigdl .l{padding:46px 44px 48px}
+.bigdl .r{background:var(--green-deep);color:#fff;padding:46px 44px 48px;display:flex;flex-direction:column;justify-content:center;gap:16px}
+.bigdl .r h3{color:#fff;font-size:1.4rem;font-weight:500}
+.bigdl .r p{color:#DCE9CC;font-size:.95rem}
+.bigdl .l h3{font-size:1.5rem;font-weight:500;margin-bottom:12px}
+.bigdl .l p{color:var(--ink-soft)}
+.bigdl .meta{display:flex;gap:26px;flex-wrap:wrap;margin-top:24px;padding-top:22px;border-top:1px solid var(--line);font-size:.82rem;color:var(--ink-soft)}
+.bigdl .meta b{display:block;font-family:var(--body);font-weight:600;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--green);margin-bottom:4px}
+@media(max-width:860px){.linkgrid{grid-template-columns:1fr}.bigdl{grid-template-columns:1fr}}
+@media(max-width:680px){
+ .dl a.row{grid-template-columns:36px 1fr;gap:16px}
+ .dl .ft{width:36px;height:36px;font-size:.52rem}
+ .dl .get{grid-column:2}
+ .bigdl .l,.bigdl .r{padding:32px 24px 34px}
+}
 </style>
 </head>
-<body class="p-about">
+<body class="p-timesheets">
 <div class="topbar">
   <div class="wrap">
     <span class="left">Medicaid approved &middot; <b>Serving all 83 counties in Michigan</b></span>
@@ -355,84 +389,99 @@ body{top:0!important}
 <main>
 <section class="pagehead">
   <div class="wrap">
-    <p class="crumb"><a href="/">Home</a> &nbsp;/&nbsp; About</p>
-    <h1>Home care with mercy at the center</h1>
-    <p>Merciful Home Care is a Michigan home care agency built around a simple idea: care should feel like family showing up, not a stranger clocking in.</p>
+    <p class="crumb"><a href="/">Home</a> &nbsp;/&nbsp; Timesheets</p>
+    <h1>Timesheets &amp; paystubs</h1>
+    <p>Everything our caregivers need to get paid on time, in one place. Download the current Merciful Home Care timesheet, check the submission rules, and get to your pay information.</p>
   </div>
 </section>
-<section class="band">
-  <div class="wrap split">
-    <div class="art reveal"><img src="assets/img/care-plan.jpg" alt="A care coordinator meeting with a client at home" loading="lazy"/></div>
-    <div class="reveal" data-delay="1">
-      <p class="eyebrow">Our story</p>
-      <h2 style="font-size:clamp(1.8rem,3.2vw,2.4rem);font-weight:400;margin:.4em 0 .7em">The dove and the olive branch stand for peace, mercy, and safe arrival.</h2>
-      <p style="color:var(--ink-soft)">That is what we want a family to feel when we walk through the door: relief that someone competent is finally here, and confidence that they will keep showing up.</p>
-      <p style="color:var(--ink-soft);margin-top:1em">Based in Southfield and serving all 83 counties in Michigan, we provide non-medical in-home care to seniors, adults with disabilities, and anyone recovering at home. We are a Medicaid approved provider, Agency #9273048, and we accept all insurance companies operating in the state.</p>
-      <p style="color:var(--ink-soft);margin-top:1em">We stay deliberately reachable. When you call, a person answers. When something changes, you hear it from us first.</p>
+
+<section class="band tight">
+  <div class="wrap">
+    <div class="bigdl reveal">
+      <div class="l">
+        <p class="eyebrow">Current form</p>
+        <h3 style="margin-top:.4em">Monthly Provider Log Sheet</h3>
+        <p>The official Merciful Home Care personal care services provider log. One sheet per client, per month. It covers time in and time out for every day worked, the ADL tasks completed, and the daily client signature lines.</p>
+        <div class="meta">
+          <span><b>Format</b>PDF, print and fill</span>
+          <span><b>Covers</b>One client, one month</span>
+          <span><b>Signatures</b>Client daily + caregiver</span>
+        </div>
+      </div>
+      <div class="r">
+        <h3>Download the timesheet</h3>
+        <p>Print a fresh copy for each client at the start of every month.</p>
+        <a class="btn btn-white" href="assets/forms/mhc-monthly-provider-log-sheet.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v12M7 11l5 5 5-5"/><path d="M4 20h16"/></svg>Download PDF</a>
+        <a class="btn btn-linew" href="assets/forms/mhc-monthly-provider-log-sheet.pdf" target="_blank" rel="noopener">View in browser</a>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="band alt">
   <div class="wrap grid2">
-    <div class="slab"><span class="num">01</span><p>What we stand for</p></div>
+    <div class="slab"><span class="num">01</span><p>How to fill it out</p></div>
     <div class="lead reveal">
-      <h2>Six things we will not compromise on</h2>
+      <h2>Four things that must be right, every time</h2>
+      <p>Payments are issued after the completed monthly timesheet for each client is received. An incomplete sheet is the single most common reason a payment is delayed.</p>
     </div>
   </div>
-  <div class="wrap"><div class="matrix reveal"><div class="mcell"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 5.6a5.4 5.4 0 0 0-7.7 0L12 6.7l-1.1-1.1a5.4 5.4 0 0 0-7.7 7.7l1.1 1.1L12 22l7.7-7.6 1.1-1.1a5.4 5.4 0 0 0 0-7.7z"/></svg></span><h3>Dignity first</h3><p>Bathing, dressing, and toileting are intimate. Our caregivers are trained to protect a person's dignity in every one of those moments.</p></div><div class="mcell"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg></span><h3>The right match</h3><p>Skills matter, but so does personality. We introduce caregivers we believe genuinely fit, and we keep looking until it is right.</p></div><div class="mcell"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 10.5 12 3l9 7.5V21a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M9 22v-7h6v7"/></svg></span><h3>It is their home</h3><p>We work inside someone else's routine, not our own. The house rules belong to the family, and we follow them.</p></div><div class="mcell"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><h3>Answer the phone</h3><p>No phone trees, no waiting a week for a call back. Families and caregivers both get a real person, same day.</p></div><div class="mcell"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6z"/></svg></span><h3>Trust, verified</h3><p>Background checks, reference checks, training, and supervision. Every caregiver, every time, without exception.</p></div><div class="mcell"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><h3>Reach everyone</h3><p>All 83 counties, all Michigan insurance. Where you live should not decide whether you get care.</p></div></div></div>
-</section>
-
-<div class="photoband">
-  <img src="assets/img/errands.jpg" alt="" aria-hidden="true"/>
-  <div class="q reveal">
-    <blockquote>If home is where they want to be, <em>we can help them stay there.</em></blockquote>
-    <p class="attr">Seniors &middot; Adults with disabilities &middot; Recovery at home &middot; Family caregivers</p>
+  <div class="wrap">
+    <div class="steps-row reveal" style="grid-template-columns:repeat(2,1fr)">
+      <div class="stepx"><span class="n">01</span><h3>Time in and time out</h3><p>Write the actual start and end time for every day you worked. Blank time fields cannot be processed, and neither can a range written across several days.</p></div>
+      <div class="stepx"><span class="n">02</span><h3>Tick the tasks you performed</h3><p>Mark the ADL tasks you actually completed that day: bathing, dressing, eating, grooming, mobility, transferring, toileting, housework, laundry, medication, meal prep, shopping, and range of motion.</p></div>
+      <div class="stepx"><span class="n">03</span><h3>Client signs each day worked</h3><p>The client must sign on the line for each day worked. A single signature at the end of the month is not accepted.</p></div>
+      <div class="stepx"><span class="n">04</span><h3>Sign it yourself and send it in</h3><p>Add your caregiver name and signature, then get the completed sheet to the office by the deadline below. Keep a photo of it for your own records.</p></div>
+    </div>
   </div>
-</div>
+</section>
 
 <section class="band">
   <div class="wrap grid2">
-    <div class="slab"><span class="num">02</span><p>Who we care for</p></div>
+    <div class="slab"><span class="num">02</span><p>Submitting</p></div>
     <div class="lead reveal">
-      <h2>Four situations we are built for</h2>
-    </div>
-  </div>
-  <div class="wrap" style="margin-top:44px">
-    <div class="vlist reveal">
-      <div class="vrow"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg></span><div><h3>Seniors aging at home</h3><p>Daily support that makes staying at home realistic and safe, for years longer than it otherwise would be.</p></div></div>
-      <div class="vrow"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 5.6a5.4 5.4 0 0 0-7.7 0L12 6.7l-1.1-1.1a5.4 5.4 0 0 0-7.7 7.7l1.1 1.1L12 22l7.7-7.6 1.1-1.1a5.4 5.4 0 0 0 0-7.7z"/></svg></span><div><h3>Adults with disabilities</h3><p>Personal care and household support that protects independence rather than replacing it.</p></div></div>
-      <div class="vrow"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><h3>Recovering after a hospital stay</h3><p>Short-term help through the weeks when a fall or a readmission is most likely.</p></div></div>
-      <div class="vrow"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 10.5 12 3l9 7.5V21a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M9 22v-7h6v7"/></svg></span><div><h3>Families carrying it alone</h3><p>Respite for the daughter, son, or spouse who has been doing everything and is running out of room.</p></div></div>
+      <h2>Where to send your completed timesheet</h2>
+      <p>Send the finished sheet whichever way is easiest for you. If you are not sure whether yours arrived, call the office and we will confirm it.</p>
+      <div class="callout" style="margin-top:34px">
+        <h3>Three ways to submit</h3>
+        <p><strong>Email:</strong> <a href="mailto:mercifulhcllc@gmail.com" style="color:var(--green-deep);text-decoration:underline">mercifulhcllc@gmail.com</a> &mdash; a clear photo or scan of every page is fine.</p>
+        <p><strong>Fax:</strong> (248) 996-9460</p>
+        <p><strong>In person or by mail:</strong> 17348 W. 12 Mile Rd., Suite 106, Southfield, MI 48076. Office hours are Monday to Friday, 9:00am to 5:00pm.</p>
+        <p style="margin-top:14px"><strong>Deadline:</strong> monthly payments are issued once the completed timesheet for each client has been received. Get your sheet in as soon as the month closes so your payment is not held to the next cycle.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="hire">
-  <div class="wrap">
-    <div class="reveal">
-      <p class="eyebrow">A program most families never hear about</p>
-      <h2>Already have someone caring for you? Let's get them paid.</h2>
-      <p>If you have a caregiver who is not being paid to care for you in your home, please let us know. We can hire that caregiver so they are paid for the services they are already providing in the member's home.</p>
-      <ul>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Family members, friends, and neighbors are all welcome to apply</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>We handle enrollment, training, scheduling, and payroll</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Your loved one keeps the caregiver they already know and trust</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>No cost to ask, and we will verify the coverage for you</li>
-      </ul>
+<section class="band alt" id="paystubs">
+  <div class="wrap grid2">
+    <div class="slab"><span class="num">03</span><p>Paystubs</p></div>
+    <div class="lead reveal">
+      <h2>View and download your paystubs</h2>
+      <p>Caregivers can view pay history, download paystubs, and get year-end tax documents through our payroll system.</p>
+      <div class="callout" style="margin-top:34px">
+        <h3>Employee pay portal</h3>
+        <p><!-- PAYSTUB PORTAL: replace the href on the button below with the payroll provider's employee login URL, then delete this note and the paragraph above the button. --><strong>Portal link coming soon.</strong> Until the online portal is live, request a copy of any paystub by calling the office at (313) 917-7979 or emailing mercifulhcllc@gmail.com, and we will send it to you the same business day.</p>
+        <p style="margin-top:16px"><a class="btn btn-solid" href="tel:+13139177979">Request a paystub</a></p>
+      </div>
     </div>
-    <div class="box reveal" data-delay="1">
-      <h3>Tell us about your caregiver</h3>
-      <p>One short call is all it takes to find out whether they qualify to be paid. We will walk you both through every step.</p>
-      <a class="btn btn-white" href="tel:+13139177979"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call (313) 917-7979</a>
-      <a class="btn btn-linew" href="contact">Send a message</a>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap grid2">
+    <div class="slab"><span class="num">04</span><p>Also useful</p></div>
+    <div class="lead reveal">
+      <h2>MDHHS forms and caregiver resources</h2>
+      <p>Home Help program documents, the client handbook, and the state contacts you may need are all on the Resources page.</p>
+      <a class="btn btn-line" href="resources#forms">Browse forms and resources</a>
     </div>
   </div>
 </section>
 
 <section class="cta">
   <div class="wrap reveal">
-    <div><h2>Come meet us</h2><p>Call (313) 917-7979 or send a message. We will answer your questions honestly, even if the answer is that you do not need us yet.</p></div>
+    <div><h2>Question about your pay or your sheet?</h2><p>Call the office Monday through Friday, 9:00am to 5:00pm. We would rather answer a small question now than hold your payment later.</p></div>
     <div class="row"><a class="btn btn-white" href="tel:+13139177979">Call (313) 917-7979</a><a class="btn btn-linew" href="contact">Contact us</a></div>
   </div>
 </section>
