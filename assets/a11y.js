@@ -1,4 +1,4 @@
-/* Spirit Home Health Care — Accessibility widget (self-contained, no third party) */
+/* Merciful Home Care Accessibility widget (self-contained, no third party) */
 (function(){
   var A=document.documentElement, KEY='shhc_a11y', FONT=[0.9,1,1.1,1.25,1.4];
   var state; try{state=JSON.parse(localStorage.getItem(KEY))||{};}catch(e){state={};}

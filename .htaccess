@@ -1,4 +1,4 @@
-# Merciful Home Care — clean URLs (no .html)
+# Merciful Home Care clean URLs (no .html)
 Options -MultiViews
 DirectoryIndex index.html
 RewriteEngine On

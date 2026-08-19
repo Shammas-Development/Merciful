@@ -1,4 +1,4 @@
-MERCIFUL HOME CARE — SITE SETUP
+MERCIFUL HOME CARE SITE SETUP
 ===============================
 
 The site is a plain static site: no build step, no dependencies. Open index.html
@@ -9,7 +9,7 @@ Clean URLs (/services, not /services.html) are handled by vercel.json on Vercel
 and by .htaccess on Apache hosting. Both are already in the folder.
 
 
-1. FORMS (required before launch — 2 minutes, free)
+1. FORMS (required before launch, 2 minutes, free)
 ---------------------------------------------------
 The contact form and the careers application both post to Web3Forms and need one
 free access key.
@@ -33,8 +33,8 @@ shows each carrier as a text wordmark because we do not have logo files yet.
 To switch to real logos: drop a file into assets/img/insurance/ using the exact
 filename listed in that folder's README.txt. .png is tried first, then .svg,
 then .jpg. The page detects the file and swaps the text for the image
-automatically. No HTML edit, and if a file is missing the text simply stays —
-nothing breaks.
+automatically. No HTML edit, and if a file is missing the text simply stays
+and nothing breaks.
 
   assets/img/insurance/humana.png       -> replaces the "Humana" wordmark
   assets/img/insurance/aetna.png        -> replaces the "Aetna" wordmark
@@ -47,7 +47,7 @@ participating provider. Most payers have a provider marketing page with approved
 assets and usage rules. Do not pull logos off Google Images.
 
 
-3. PAYSTUB PORTAL (open item — needs the payroll provider)
+3. PAYSTUB PORTAL (open item, needs the payroll provider)
 -----------------------------------------------------------
 timesheets.html has a "Paystubs" section (#paystubs) with a placeholder. Once
 the client tells us which payroll system they use (ADP, Paychex, Gusto,
@@ -74,11 +74,11 @@ timesheets.html  The Merciful Home Care Monthly Provider Log Sheet
 The MDHHS files were downloaded from the state on 18 August 2026. MDHHS revises
 them periodically. To refresh, pull the current versions from
 michigan.gov/mdhhs/adult-child-serv/adults-and-seniors/forms-pubs and overwrite
-the files in assets/forms/mdhhs/ using the same filenames — no HTML edit needed.
+the files in assets/forms/mdhhs/ using the same filenames. No HTML edit needed.
 The page already links out to that official library as the always-current source.
 
 
-5. PHOTOS (open item — client asked for these to change)
+5. PHOTOS (open item, client asked for these to change)
 ---------------------------------------------------------
 The client wants the photography changed so the site does not look like Spirit
 Home Health Care. The fonts have been changed (see below) but the photos are

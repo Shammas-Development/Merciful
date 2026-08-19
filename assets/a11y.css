@@ -1,4 +1,4 @@
-/* Spirit Home Health Care — Accessibility widget */
+/* Merciful Home Care Accessibility widget */
 .acc-btn{position:fixed;right:20px;bottom:20px;z-index:9998;width:56px;height:56px;border-radius:50%;background:#2EA5D6;border:none;color:#fff;box-shadow:0 8px 24px rgba(64,115,140,.45);cursor:pointer;display:grid;place-items:center;transition:transform .2s,background .2s}
 .acc-btn:hover,.acc-btn:focus-visible{transform:scale(1.06);background:#40738C}
 .acc-btn svg{width:30px;height:30px}
